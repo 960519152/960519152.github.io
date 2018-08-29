@@ -1,8 +1,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!--适配移动-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--脚本-->
 <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="./js/getInfo.js" type="text/javascript"></script>
 <!--样式库-->
 <link rel="stylesheet" href="./css/style.css" type="text/css">
 <!--标题和图片-->
@@ -10,45 +13,28 @@
 <link rel="bookmark" 	  href="./img/titleicon.ico"/>
 <title>This</title>
 <style>
-.peopletime{
-float:right;
-}
-.all{
-width: 70%;
-margin: 0px auto;
-text-align: center;
-position:relative;
-}
-.title{
-position: absolute;
-margin-left: 50%;
-margin-top: 30%
-}
-.title span a{
-color: black;
-font-size: 25px;
-text-decoration:none;
-}
 
 </style>
 </head>
 <body>
-	<div class="peopletime"><script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"><\/script></div>
-	<div class="all">
-		<div class="title">
-			<span><a href="https://blog.csdn.net/qq_38880700">Enter</a></span><br>
+	<div class="all">		
+		<div class="info">
+			<div class="guide">
+			<h2><a href="https://blog.csdn.net/qq_38880700">Enter</a></h2>
+			<span class="spanb"><input class="nowtime" value=""/></span>
+			</div>
 		</div>
 	</div>
 </body>
 <script type="text/javascript">
-$(document).ready(function(){
-	//var time='<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"><\/script>';
-	//var script=document.createElement("script");
-	//script.setAttribute("type", "text/javascript");
-	//script.setAttribute("charset", "Shift_JIS");
-	//script.setAttribute("src", "http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js");
-	//var heads = document.getElementsByTagName("head");
-	//heads[0].appendChild(script);
-})
+var timeeva;
+function getdata(){
+	$(".nowtime").val("");
+	var time=getNowFormatDate();
+	$(".nowtime").val(time);
+}
+setInterval(function(){
+	getdata();
+},1000);
 </script>
 </html>
