@@ -36,27 +36,35 @@
             width:70%;
             text-align:left;
         }
-        .nav-bar span a{
-            color: #12144c;
+		a{
+			color: #12144c;
             text-decoration: none;
             font-size: 1.1em;
             letter-spacing: 1px;
+		}
+		.a-first{
+			margin-left:0px;
+		}
+		.a-last{		
             margin-left: 7%;
-        }
+		}
         /**
         网页端
          */
         @media screen and (max-width: 760px){
-            .nav-bar span a{
+            .a-first,.a-last{
                 margin-left: 1%;
             }
         }
+		/**
+		移动端
+		*/
         @media screen and (max-device-width: 768px)  {
             .myname{
                 color: red;
             }
-            a{
-                margin-left: 7%;
-                display: block;
-            }
+			.a-first,.a-last{
+				margin-left:5px;
+				display: block;
+			}
         }
