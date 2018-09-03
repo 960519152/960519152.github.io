@@ -1,0 +1,62 @@
+@charset "utf-8";
+  body{
+            padding:0px;
+            margin:0px;
+            background: -webkit-linear-gradient(left,#99FFFF , #CC99FF); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,#99FFFF , #CC99FF); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #99FFFF , #CC99FF); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #99FFFF , #CC99FF); /* 标准的语法 */
+            devmin-width: 860px;
+        }
+        .title{
+            width: 100%;
+            border-bottom: 1px solid #3333;
+        }
+        .myname{
+            font-size: 1.6em;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-weight: initial;
+            letter-spacing: 2px;
+            color:#099;
+        }
+        .myauto{
+            font-size: 0.9em;
+            padding-left: 10px;
+            padding-top: 5px;
+            color: #999999;
+            padding-bottom: 5px;
+        }
+        .nav-bar,.nav-bar span  {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .nav-bar span{
+            width:70%;
+            text-align:left;
+        }
+        .nav-bar span a{
+            color: #12144c;
+            text-decoration: none;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            margin-left: 7%;
+        }
+        /**
+        网页端
+         */
+        @media screen and (max-width: 760px){
+            .nav-bar span a{
+                margin-left: 1%;
+            }
+        }
+        @media screen and (max-device-width: 768px)  {
+            .myname{
+                color: red;
+            }
+            a{
+                margin-left: 7%;
+                display: block;
+            }
+        }
