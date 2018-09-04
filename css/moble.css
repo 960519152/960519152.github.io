@@ -1,4 +1,8 @@
 @charset "utf-8";
+      html,body{
+            height: 100%;
+            width: 100%;
+           }
       body{
             padding:0px;
             margin:0px;
@@ -6,11 +10,8 @@
             background: -o-linear-gradient(right,#99FFFF , #CC99FF); /* Opera 11.1 - 12.0 */
             background: -moz-linear-gradient(right, #99FFFF , #CC99FF); /* Firefox 3.6 - 15 */
             background: linear-gradient(to right, #99FFFF , #CC99FF); /* 标准的语法 */
-            devmin-width: 860px;
             }
-        html,body{
-            height: 100%;
-        }
+
         .title{
             width: 100%;
             border-bottom: 1px solid #3333;
