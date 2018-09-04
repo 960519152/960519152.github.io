@@ -1,5 +1,5 @@
 @charset "utf-8";
-  body{
+      body{
             padding:0px;
             margin:0px;
             background: -webkit-linear-gradient(left,#99FFFF , #CC99FF); /* Safari 5.1 - 6.0 */
@@ -7,6 +7,9 @@
             background: -moz-linear-gradient(right, #99FFFF , #CC99FF); /* Firefox 3.6 - 15 */
             background: linear-gradient(to right, #99FFFF , #CC99FF); /* 标准的语法 */
             devmin-width: 860px;
+            }
+        html,body{
+            height: 100%;
         }
         .title{
             width: 100%;
