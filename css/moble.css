@@ -68,7 +68,9 @@
                 color: red;
             }
 			.a-first,.a-last{
-				margin-left:5px;
-				display: block;
+				margin-left:0px;
+                font-size: 0.8em;
+               /* display: block;*/
 			}
+
         }

@@ -5,13 +5,16 @@
     <!--标题和图片-->
     <link rel="shortcut icon" href="./img/titleicon.ico"/>
     <link rel="bookmark" 	  href="./img/titleicon.ico"/>
+    <!--适配手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--iframe样式-->
     <link rel="stylesheet"    href="./css/iframe.css" type="text/css">
-    <!--脚本-->
     <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <title>This-iframe</title>
 </head>
 <body>
-    <iframe src="./tabpage.html" scrolling="no" frameborder="0"></iframe>
+<!--主要存在上边导航页和下面的内容页-->
+    <iframe src="./tabpage.html" scrolling="no" frameborder="0"  align="top" marginheight="0px" class="top-frame"></iframe>
+    <iframe src="./content.html" scrolling="no" frameborder="0"   marginheight="0px" name="all_bottem"></iframe>
 </body>
 </html>
