@@ -5,7 +5,6 @@ html,body{
     width: 100%;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
 }
 
 iframe{
@@ -17,14 +16,4 @@ iframe{
 
 .top-frame{
     height: 120px;
-}
-
-/**
-移动端
-*/
-@media screen and (max-device-width: 900px){
-  /*  .top-frame{
-        height: 240px;
-    }*/
-
 }

@@ -1,12 +1,21 @@
 1：iframe 使用时要区分哪个作为导航栏，哪个作为内容页，布局随意；
-    "src" 指向要使用的页面地址
-    "name" 为其他标签打开新地址时的打开位置
-     frameborder="0"   去除边框
-     align="top"  上下布局时消除两个iframe之间的留白
+    
+"src" 指向要使用的页面地址
+
+"name" 为其他标签打开新地址时的打开位置
+ 
+ frameborder="0"   去除边框
+    
+ align="top"  
+上下布局时消除两个iframe之间的留白
      其中去除边框时要注意引用的src的边框也要去除
-     在一个frame里面的src地址中配置css，可以让全局使用，如果单个页面也有css，单个页面优先
-     实例
-   <iframe src="./tabpage.html" scrolling="no" frameborder="0"  align="top" marginheight="0px" class="top-frame"></iframe>
+    
+ 在一个frame里面的src地址中配置css，可以让全局使用，如果单个页面也有css，单个页面优先
+     
+实例
+
+<iframe src="./tabpage.html" scrolling="no" frameborder="0"  align="top" marginheight="0px" class="top-frame"></iframe>
       
-   <iframe src="./content.html" scrolling="no" frameborder="0"   marginheight="0px" name="all_bottem"></iframe>
+  
+<iframe src="./content.html" scrolling="no" frameborder="0"   marginheight="0px" name="all_bottem"></iframe>
 
