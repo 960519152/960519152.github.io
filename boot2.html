@@ -20,13 +20,6 @@
             font-size: 1.0em;
             margin-top: 20px;
         }
-        .img-responsive{
-            height: 50%;
-            width: 50%;
-            margin-left: 5%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
         .navbar-default{
             background-color: transparent;
         }
@@ -37,17 +30,28 @@
         .media{
             padding-bottom: 10px;
         }
-        @media (max-width: 800px){
+        @media (max-width: 800px){ /*小于800像素时*/
             .media-object{
                 width: 130px;
             }
             .media-body{
-                font-size: 1.0em;
+                font-size: 1.0              em;
             }
         }
-        @media (min-width: 800px){
+        @media (min-width: 800px){ /*大于800像素时*/
             .media-object{
-                width: 170px;
+                width: 130px;
+            }
+            footer{
+                margin-top: 7%;
+            }
+        }
+        @media (min-width: 1200px){ /*大于800像素时*/
+            .media-object{
+                width: 150px;
+            }
+            footer{
+                margin-top: 7%;
             }
         }
     </style>
@@ -162,6 +166,7 @@
                         <li class="list-group-item"><a href="#">1</a></li>
                         <li class="list-group-item"><a href="#">1</a></li>
                     </ul>
+                 <div id="contentRight" class="hidden-xs">
                     <blockquote>
                         <p>其他推荐</p>
                     </blockquote>
@@ -173,9 +178,22 @@
                         <li class="list-group-item"><a href="#">1</a></li>
                         <li class="list-group-item"><a href="#">1</a></li>
                     </ul>
+                 </div>
                 </div>
             </div>
         </div>
     </div>
+<footer>
+    <div class="container text-center">
+        <div>
+            ©2018 Baidu  <a href="#">使用百度前必读</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">百度翻译开放平台</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">百度大脑</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">翻译协议</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">建议与反馈</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="#">帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        </div>
+    </div>
+</footer>
 </body>
 </html>
