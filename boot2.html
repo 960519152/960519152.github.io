@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./plugin/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/moble.css" type="text/css">
+    <title>Title</title>
+    <style>
+        @media (min-width: 1400px) {
+            .container{
+                width: 90%;
+            }
+        }
+        .container{
+            font-size: 1.0em;
+            margin-top: 20px;
+        }
+        .img-responsive{
+            height: 50%;
+            width: 50%;
+            margin-left: 5%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .navbar-default{
+            background-color: transparent;
+        }
+        .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover{
+            font-size: 1.0em;
+            background-color: #b0cfff;
+        }
+        .media{
+            padding-bottom: 10px;
+        }
+        @media (max-width: 800px){
+            .media-object{
+                width: 130px;
+            }
+            .media-body{
+                font-size: 1.0em;
+            }
+        }
+        @media (min-width: 800px){
+            .media-object{
+                width: 170px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="title">
+        <div class="myname">不知春秋</div>
+        <div class="myauto">不实心不成事，不虚心不知事。 不自是者博闻，不自满者受益......</div>
+    </div>
+</header>
+
+<div class="nav navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="https://baidu.com" target="_parent" class="navbar-brand"><strong>百 度 一 下</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="boot1.html" target="_parent">链接1</a></li>
+            <li class="active"><a href="boot2.html">产品展示</a></li>
+            <li><a href="#">链接3</a></li>
+            <li><a href="#">链接4</a></li>
+            <li><a href="#">链接5</a></li>
+        </ul>
+    </div>
+</div>
+   <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-9 col-lg-9">
+                <div id="contentLeft">
+                    <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img src="./img/people.png" class="media-object"/>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">潮流百货</h3>
+                                <p>
+                                    如果你想在深入学习 Vue 之前对它有更多了解，我们制作了一个视频，带您了解其核心概念和一个示例工程。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img src="./img/people.png" class="media-object"/>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">潮流百货</h3>
+                                <p>
+                                    如果你已经是有经验的前端开发者，想知道 Vue 与其它库/框架有哪些区别，请查看对比其它框架。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="./img/people.png" class="media-object"/>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">潮流百货</h3>
+                                    <p>
+                                        如果你已经是有经验的前端开发者，想知道 Vue 与其它库/框架有哪些区别，请查看对比其它框架。
+                                    </p>
+                                </div>
+                            </div>
+                     </div>
+                     <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img src="./img/people.png" class="media-object"/>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading">潮流百货</h3>
+                                    <p>
+                                        如果你已经是有经验的前端开发者，想知道 Vue 与其它库/框架有哪些区别，请查看对比其它框架。
+                                    </p>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div id="contentRight">
+                    <blockquote>
+                        <p>本类排行</p>
+                    </blockquote>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                    </ul>
+                    <blockquote>
+                        <p>其他推荐</p>
+                    </blockquote>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                        <li class="list-group-item"><a href="#">1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

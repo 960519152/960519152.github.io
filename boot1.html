@@ -29,9 +29,13 @@
         .navbar-default{
             background-color: transparent;
         }
+        .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover{
+            font-size: 1.0em;
+            background-color: #b0cfff;
+        }
     </style>
 </head>
-<body   style="height: 1300px">
+<body>
     <header>
         <div class="title">
             <div class="myname">不知春秋</div>
@@ -52,13 +56,14 @@
                     </div>
                     <div class="collapse navbar-collapse" id="example-navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="boot1.html" target="_parent">链接1</a></li>
-                            <li><a href="#">链接2</a></li>
+                            <li class="active"><a href="boot1.html" target="_parent">链接1</a></li>
+                            <li><a href="boot2.html">产品展示</a></li>
                             <li><a href="#">链接3</a></li>
                             <li><a href="#">链接4</a></li>
                             <li><a href="#">链接5</a></li>
                         </ul>
                     </div>
+        </div>
 <!--        <div class="nav-bar">
             <span>
                 <a href="boot1.html" target="_parent" class="a-first">链接1</a>
