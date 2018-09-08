@@ -10,10 +10,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <title>This-iframe</title>
+    <style>
+        iframe{
+            vertical-align:bottom;
+            display: block;
+            bottom: 0px;
+        }
+        .main{
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 <!--主要存在上边导航页和下面的内容页-->
-    <iframe src="./tabpage.html" scrolling="no" frameborder="0"  align="top" marginheight="0px" class="top-frame"></iframe>
-    <iframe src="./content.html" scrolling="no" frameborder="0"   marginheight="0px" name="all_bottem"></iframe>
+    <iframe src="./tabpage.html" scrolling="no" frameborder="0"  align="top"   framespacing="0"    marginwidth="0" marginheight="0" class="top-frame" style="vertical-align:bottom;"></iframe>
+    <iframe src="./content.html" scrolling="no" frameborder="0"  name="all_bottem"  framespacing="0" onload="this.height=this.contentWindow.document.documentElement.scrollHeight"></iframe>
 </body>
 </html>
+<script>
+/*    function reinitIframe(){
+        parent.document.getElementById("main").height=0;
+        console.log(document.body.scrollHeight);
+        parent.document.getElementById("main").height=document.body.scrollHeight;
+    }
+  window.onload = function () {
+      reinitIframe();
+  };*/
+</script>
