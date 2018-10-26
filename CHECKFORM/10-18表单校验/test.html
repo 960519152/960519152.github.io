@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/check.js"></script>
+    <title>封装表单校验</title>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="title">表单校验</div>
+        <ul>
+            <li>
+                <label class="li-label">姓名：</label>
+                <input type="text" class="li-input" name="name" placeholder="请输入姓名" value=""  data-type="text"/>
+                <span class="li-label li-errorMsg" data-name="姓名">输入信息有误</span>
+            </li>
+            <li>
+                <label class="li-label">性别：</label>
+                <input type="text" class="li-input" name="sex" placeholder="请输入性别" value="" data-type="sex"/>
+                <span class="li-label li-errorMsg" data-name="性别">输入信息有误</span>
+            </li>
+            <li>
+                <label class="li-label">出生日期：</label>
+                <input type="text" class="li-input" name="birth" placeholder="请输入出生日期" value="" data-type="time"/>
+                <span class="li-label li-errorMsg" data-name="出生日期">输入信息有误</span>
+            </li>
+            <li>
+                <label class="li-label">手机：</label>
+                <input type="text" class="li-input" name="phone" placeholder="请输入手机号码" value="" data-type="tel" />
+                <span class="li-label li-errorMsg" data-name="手机">输入信息有误</span>
+            </li>
+            <li>
+                <label class="li-label">籍贯：</label>
+                <input type="text" class="li-input" name="jiguan" placeholder="请输入籍贯" value="" data-type="text"/>
+                <span class="li-label li-errorMsg" data-name="籍贯">输入信息有误</span>
+            </li>
+            <li>
+                <label class="li-label">现居地：</label>
+                <input type="text" class="li-input" name="address" placeholder="请输入现居地" value="" data-type="text"/>
+                <span class="li-label li-errorMsg" data-name="现居地">输入信息有误</span>
+            </li>
+        </ul>
+        <div class="bt"><a class="okBt">确定</a></div>
+    </div>
+</body>
+<script>
+    $(function () { //第一个参数代表输入框的class，第一个代表错误信息的class  input中的data-type属性要添加规定属性，后面需要判断格式
+        var formCheck = new Check("li-input", "li-errorMsg");
+        formCheck.init();
+    })
+</script>
+
+</html>
