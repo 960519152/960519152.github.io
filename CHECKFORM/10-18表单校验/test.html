@@ -16,33 +16,23 @@
         <div class="title">表单校验</div>
         <ul>
             <li>
-                <label class="li-label">姓名：</label>
-                <input type="text" class="li-input" name="name" placeholder="请输入姓名" value=""  data-type="text"/>
-                <span class="li-label li-errorMsg" data-name="姓名">输入信息有误</span>
-            </li>
-            <li>
-                <label class="li-label">性别：</label>
-                <input type="text" class="li-input" name="sex" placeholder="请输入性别" value="" data-type="sex"/>
-                <span class="li-label li-errorMsg" data-name="性别">输入信息有误</span>
-            </li>
-            <li>
-                <label class="li-label">出生日期：</label>
-                <input type="text" class="li-input" name="birth" placeholder="请输入出生日期" value="" data-type="time"/>
-                <span class="li-label li-errorMsg" data-name="出生日期">输入信息有误</span>
+                <label class="li-label">用户名：</label>
+                <input type="text" class="li-input" name="name" placeholder="请输入用户名" value=""  data-type="text" maxlength="12"/>
+                <span class="li-label li-errorMsg" data-name="用户名">输入信息有误</span>
             </li>
             <li>
                 <label class="li-label">手机：</label>
-                <input type="text" class="li-input" name="phone" placeholder="请输入手机号码" value="" data-type="tel" />
+                <input type="text" class="li-input" name="phone" placeholder="请输入手机号码" value="" data-type="tel" maxlength="11"/>
                 <span class="li-label li-errorMsg" data-name="手机">输入信息有误</span>
             </li>
             <li>
                 <label class="li-label">籍贯：</label>
-                <input type="text" class="li-input" name="jiguan" placeholder="请输入籍贯" value="" data-type="text"/>
+                <input type="text" class="li-input" name="jiguan" placeholder="请输入籍贯" value="" data-type="text" maxlength="25"/>
                 <span class="li-label li-errorMsg" data-name="籍贯">输入信息有误</span>
             </li>
             <li>
                 <label class="li-label">现居地：</label>
-                <input type="text" class="li-input" name="address" placeholder="请输入现居地" value="" data-type="text"/>
+                <input type="text" class="li-input" name="address" placeholder="请输入现居地" value="" data-type="text" maxlength="25"/>
                 <span class="li-label li-errorMsg" data-name="现居地">输入信息有误</span>
             </li>
         </ul>
